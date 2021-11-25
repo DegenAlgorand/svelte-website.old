@@ -5,17 +5,15 @@ import express from 'express';
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === 'development';
+const url = dev ? '/' : 'degen-website';
 
 const service = express();
 
-const bindSessionToRequest = (req, res, next) => sapper.middleware({
-	session: () => ({})
-})(req, res, next)
-
 service.use(
+	url,
 	compression({ threshold: 0 }),
 	sirv('static', { dev }),
-	bindSessionToRequest
+	sapper.middleware()
 )
 
 service.listen(PORT, () => {
