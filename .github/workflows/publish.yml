@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@master
       - name: Build Sapper
         uses: truewebartisans/actions-sapper@master
+        with:
+          args: "--legacy --basepath degen-website"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
