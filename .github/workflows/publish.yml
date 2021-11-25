@@ -6,25 +6,16 @@ on:
     branches:
       - develop
 
-jobs:
-  build:
+jjobs:
+  build_deploy:
     runs-on: ubuntu-latest
-    name: Publish GitHub Pages
     steps:
-      - name: git-checkout
-        uses: actions/checkout@v2
-
-      - name: Install all dependencies
-        run: npm install
-
-      - name: Build
-        env:
-          NODE_ENV: PROD
-        run: npm run build 
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/checkout@master
+      - name: Build Sapper
+        uses: truewebartisans/actions-sapper@master
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@master
         with:
+          publish_dir: __sapper__/export
+          publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: __sapper__/build
-  
