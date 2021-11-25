@@ -5,10 +5,12 @@ import express from 'express';
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === 'development';
+const url = dev ? '/' : 'degen-website';
 
 const service = express();
 
 service.use(
+	url,
 	compression({ threshold: 0 }),
 	sirv('static', { dev }),
 	sapper.middleware()
