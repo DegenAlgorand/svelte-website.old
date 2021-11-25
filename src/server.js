@@ -9,7 +9,6 @@ const dev = NODE_ENV === 'development';
 const service = express();
 
 service.use(
-	'/degen-website',
 	compression({ threshold: 0 }),
 	sirv('static', { dev }),
 	sapper.middleware()
