@@ -1,4 +1,6 @@
 @import '../variables';
+@import '../mixins';
+
 
 body {
   font-family: $text-font;
@@ -13,22 +15,18 @@ body {
   font-family: $title-font;
 }
 
-.title {
-  @extend %title;
-}
-
 .banner-title {
   @extend %title;
-  font-size: 5rem;
+  font-size: clamp(3rem, 12.5vw, 6rem);
+  line-height: 1.1;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin: 1em 0 1em;
-  .subtitle {
-    margin-top: -0.5em;
-    font-size: 0.325em;
-    display: block;
-  }
+}
+.banner-subtitle {
+  @extend %title;
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  text-align: center;
 }
 
 .page-title {
@@ -46,9 +44,10 @@ body {
 
 .section-title {
   @extend %title;
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 6vw, 2.5rem);
+  line-height: 1.2;
   font-weight: bold;
-  margin: 1em 0 0.5em;
+  margin: 1.5em 0 0.75em;
 }
 
 
@@ -56,11 +55,8 @@ body {
 // Text
 // ----------------------------------------------
 p {
-  font-size: 1.125rem;
-  line-height: 1.4;
-}
-.big-text {
-  font-size: 1.25rem;
+  font-size: clamp(1.125rem, 3vw, 1.25rem);
+  line-height: 1.5;
 }
 
 
