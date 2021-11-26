@@ -59,6 +59,11 @@
         Tinyman Liquidity Pool
       </a>
     </li>
+    <li>
+      <a class="text-link" target="_blank" href="https://github.com/DegenAlgorand">
+        GitHub
+      </a>
+    </li>
   </ul>
 
 </nav>
