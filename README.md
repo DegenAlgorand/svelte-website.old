@@ -8,7 +8,7 @@ this is the website for degentoken.xyz, a community support algorand standard as
 
 [tinychart](https://tinychart.org/asset/417708610)
 
-[buy on tinychart](https://app.tinyman.org/#/swap?asset_in=0&asset_out=417708610)
+[buy on tinyman](https://app.tinyman.org/#/swap?asset_in=0&asset_out=417708610)
 
 [algoexplorer](https://algoexplorer.io/asset/417708610)
 
