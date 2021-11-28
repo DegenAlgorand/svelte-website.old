@@ -4,7 +4,6 @@
 
 <style lang="scss">
   @import '../../styles/variables';
-  @import '../../styles/variables';
   .wrapper {
     min-height: 60vh;
     display: flex;
