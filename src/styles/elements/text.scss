@@ -24,7 +24,8 @@ body {
   text-transform: uppercase;
 }
 .banner-subtitle {
-  @extend %title;
+  color: $title-color;
+  font-family: $text-font;
   font-size: clamp(1.25rem, 4vw, 1.5rem);
   text-align: center;
 }
