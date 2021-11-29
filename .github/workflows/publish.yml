@@ -18,4 +18,5 @@ jobs:
         with:
           publish_dir: __sapper__/export
           publish_branch: gh-pages
+          cname: degentoken.xyz
           github_token: ${{ secrets.GITHUB_TOKEN }}
