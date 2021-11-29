@@ -17,14 +17,15 @@ body {
 
 .banner-title {
   @extend %title;
-  font-size: clamp(3rem, 12.5vw, 6rem);
+  font-size: clamp(3rem, 12.5vw, 5rem);
   line-height: 1.1;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
 }
 .banner-subtitle {
-  @extend %title;
+  color: $title-color;
+  font-family: $text-font;
   font-size: clamp(1.25rem, 4vw, 1.5rem);
   text-align: center;
 }
@@ -54,7 +55,7 @@ body {
 //
 // Text
 // ----------------------------------------------
-p {
+.large-text{
   font-size: clamp(1.125rem, 3vw, 1.25rem);
   line-height: 1.5;
 }
@@ -64,4 +65,27 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+ol.list,
+ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: block;
+    margin: 0.5em 0;
+    padding: 0 0 0 2em;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0.5em;
+      left: 0.25em;
+      background: $red;
+      border-radius: 0.5em;
+      width: 0.5em;
+      height: 0.5em;
+    }
+  }
 }

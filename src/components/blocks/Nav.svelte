@@ -14,7 +14,7 @@
   .secondary {
     margin: 0.5em 0;
     li {
-      margin: 0.25em;
+      margin: 0.25em 0.5em;
     }
   }
   .text-link {
