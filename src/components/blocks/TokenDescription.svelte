@@ -20,7 +20,7 @@
 
 <section>
   <h2 class="section-title">
-    DEGEN is a governance token.
+    $DEGEN is a governance token
   </h2>
   <dl>
     <dt>Total Supply:</dt>
@@ -28,7 +28,7 @@
     <dt>Asset ID:</dt>
       <dd>417708610</dd>
   </dl>
-  <p>
+  <p class="large-text">
     100% of Degen initially went into the Tinyman liquidity pool and no Degen was withheld for the team.
     In fact, there is no predetermined 'team', all Degen token holders will have a say in determining the direction of Degen. 
     We are bootstrapping a community, Degen Token is our governance.
