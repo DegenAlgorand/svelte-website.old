@@ -34,7 +34,7 @@
   </Banner>
 
   <div class="content container">
-    <MissionStatement />
+    <!-- <MissionStatement /> -->
     <TokenDescription />
     <Roadmap />  
   </div>
