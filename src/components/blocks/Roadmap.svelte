@@ -13,7 +13,7 @@
       <strike>Token Launch</strike> We're Live on Tinyman.org
     </li>
     <li>
-      Artist Collab / NFT drop to Liquidity Providers
+      Artist Collabs / Degen Forever Series 
     </li>
     <li>
       On chain voting

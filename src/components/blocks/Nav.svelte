@@ -55,7 +55,7 @@
       </a>
     </li>
     <li>
-      <a class="text-link" target="_blank" href="https://algoexplorer.io/address/HPSDZOIBAPREKKIKWDLKRKLQKFOFU3KH6NGVS3YGVZD3E7ZIK2ZPKYSRNU">
+      <a class="text-link" target="_blank" href="https://algoexplorer.io/address/PRAFO5F2MFML4OXBB744DEXHY54OJCCGDQ7GUAVBE2AFDIVRBA4SIVFG5M">
         Tinyman Liquidity Pool
       </a>
     </li>
